@@ -176,4 +176,36 @@ async function submit() {
   border: 1px solid rgba(126,156,181,0.35);
   border-radius: 8px; font-size: 14px;
   font-family: 'Noto Sans SC', sans-serif;
-  color: var(--text); background: #fff; outline:
+  color: var(--text); background: #fff; outline: none;
+}
+.date-input-wrap input[type="date"]:focus { border-color: var(--accent); }
+
+/* Textarea */
+.modal textarea {
+  width: 100%; padding: 10px 12px; resize: vertical; min-height: 60px;
+  border: 1px solid rgba(126,156,181,0.35);
+  border-radius: 8px; font-size: 14px;
+  font-family: 'Noto Sans SC', sans-serif;
+  color: var(--text); background: #fff; outline: none;
+}
+.modal textarea:focus { border-color: var(--accent); }
+
+.upload-progress {
+  text-align: center; margin-top: 8px;
+  font-size: 13px; color: var(--accent);
+}
+
+.modal-actions { display: flex; gap: 10px; margin-top: 18px; justify-content: flex-end; }
+.modal-actions button {
+  padding: 8px 20px; border-radius: 18px; border: none; cursor: pointer;
+  font-size: 14px; font-family: 'Noto Sans SC', sans-serif;
+}
+.btn-cancel {
+  background: transparent; color: var(--text-light);
+  border: 1px solid rgba(126,156,181,0.3) !important;
+}
+.btn-cancel:hover { border-color: var(--text-light) !important; }
+.btn-submit { background: var(--accent); color: #fff; }
+.btn-submit:hover { filter: brightness(1.1); }
+.btn-submit:disabled { opacity: 0.5; cursor: not-allowed; }
+</style>
